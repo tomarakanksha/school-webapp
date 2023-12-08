@@ -1,0 +1,37 @@
+.quote-container {
+    position: relative;
+    height: 300px; /* Adjust this value as needed */
+  }
+  
+  .service-quote {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .quote-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 0 20px; /* Add some padding to prevent the text from touching the edge of the image */
+  }
+  
+  /* Increase the height of the quote container on screens narrower than 900px */
+  @media (max-width: 900px) {
+    .quote-container {
+      height: 400px; /* Increase the height */
+    }
+  
+    .quote-text {
+        font-size: 1em;
+      padding: 0;
+      margin: 0;
+    }
+  }
