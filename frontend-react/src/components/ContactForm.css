@@ -14,7 +14,7 @@
   padding: 0 1rem;
   margin-bottom: 2rem;
   border-radius: 9px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #000000;
 }
 .form textarea {
   padding: 0 1rem;
@@ -25,8 +25,17 @@
 
 .form button {
   display: inline;
+  background-color: #919994;
+  border: 1px solid #ffffff;
 }
-
+.form button:active {
+  background-color: #008e3b;
+  border: 1px solid #fff;
+}
+.form button:hover {
+  background-color: #008e3b;
+  border: 1px solid #fff;
+}
 @media screen and (max-width: 555px) {
   .form {
     margin: 3rem 2rem;

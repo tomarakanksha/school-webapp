@@ -35,6 +35,16 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.login-form button {
+  display: inline;
+  background-color: #e7e7e7;
+  border: 1px solid #000000;
+  color: #000000; 
+}
+.login-form button:hover {
+  background-color: #008e3b;
+  border: 1px solid #fff;
+}
 @media screen and (max-width: 555px) {
   .login-form {
     margin: 3rem 2rem;
@@ -44,4 +54,7 @@
     width: 90%;
     margin: 0;
   }
+}
+.error {
+  color: red;
 }

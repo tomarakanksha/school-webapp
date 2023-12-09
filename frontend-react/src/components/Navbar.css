@@ -1,5 +1,6 @@
 .NavbarItems {
-  background-color: #efefef;
+  /*background-color:  #efefef;*/
+  background-color:  #008e3b;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,10 +16,15 @@
 }
 
 .navbar-logo {
-  color: #222;
+  color: #ffffff;
   font-size: 2rem;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+}
+.navbar-logo:hover {
+  color: #ffffff;
+  text-decoration: none; /* add this line */
 }
 .nav-menu {
   display: grid;
@@ -30,15 +36,15 @@
 }
 .nav-links {
   text-decoration: none;
-  color: #222;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   padding: 0.7rem 1rem;
   white-space: nowrap;
 }
 .nav-links.active {
-  background-color: #000000;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   font-weight: bold;
   border-radius: 4px;
 }
@@ -47,8 +53,8 @@
   padding-right: 10px;
 }
 .nav-links:hover {
-  background-color: #000000;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
@@ -95,7 +101,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #fff;
+    background-color: #008e3b;
     width: 100%;
     height: auto;
     position: absolute;
@@ -107,6 +113,7 @@ button:hover {
     margin: 0;
     transition: all 0.6s ease-in-out;
     border-radius: 4px;
+    border: 1px solid #fff;
   }
   .nav-menu.active {
     left: 0;
@@ -116,10 +123,10 @@ button:hover {
   }
   .nav-links {
     display: block;
-    width: 100%;
     font-size: 1.2rem;
     padding: 1.5rem 1rem;
     margin-left: 34px;
+    margin-right: 34px;
   }
   .nav-links.active {
     width: 80%;
@@ -147,9 +154,14 @@ button:hover {
   .menu-icons i {
     font-size: 1.5rem;
     cursor: pointer;
-    color: #000000;
+    color: #ffffff;
   }
   .signup-btn {
     display: none;
   }
+}
+.logo {
+  height: 2.5rem; /* should be the same as the font-size of .navbar-logo */
+  width: auto; /* to maintain aspect ratio */
+  margin-right: 0.4rem; /* adjust as needed */
 }

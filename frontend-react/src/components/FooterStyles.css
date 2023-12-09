@@ -1,7 +1,7 @@
 .footer {
   padding: 2rem 3rem;
-  background: #efefef;
-  color: #000000;
+  background: #008e3b;
+  color: #ffffff;
 }
 .top {
   display: flex;
@@ -14,20 +14,20 @@
   text-align: center;
   color: #000000;
   font-size: 1rem;
-  background-color: #000000;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
 .top i {
-  color: #000000;
+  color: #ffffff;
   font-size: 2rem;
   margin-left: 1rem;
   transition: 0.3s ease-in-out;
   
 }
 .top i:hover {
-  color: #01959a;
+  color: #033b10;
   transform: scale(1.3);
 }
 .bottom {
