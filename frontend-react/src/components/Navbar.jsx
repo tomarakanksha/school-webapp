@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import myIcon from '../Assets/logo.png';
 
 const Navbar = () => {
   const [isIconClicked, setIsIconClicked] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="NavbarItems">
-        <h2 className="navbar-logo">BrainTree Academy</h2>
+        <Link className="navbar-logo" to="/"><img className = "logo" src={myIcon} alt="My Icon" />BrainTree Academy</Link>
 
         <div className="menu-icons" onClick={handleIcon}>
           {isIconClicked ? (
